@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>News | GES Dera Malla Sing</title>
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Lato:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-K3mIm1mUhvGPpFl+pC9IUE+8PjnZeX0ha6xUiMz7uY/VTN+h+0Rw6vAHyrx0Sx+mj8wjOqEnU5Bp3dgQVXJ44A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/styles.css">
+
+  <style>
+    /* Simple card layout for news */
+    .news-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+    .news-card {
+      background-color: var(--light-color);
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+      display: flex;
+      flex-direction: column;
+    }
+    .news-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+    .news-card .content {
+      padding: 1.5rem;
+      flex: 1;
+    }
+    .news-card h3 {
+      font-family: var(--font-heading);
+      margin-bottom: 0.5rem;
+      color: var(--primary-color);
+      font-size: 1.3rem;
+    }
+    .news-card p {
+      color: var(--secondary-color);
+      font-size: 0.9rem;
+      line-height: 1.4;
+      margin-bottom: 0.8rem;
+    }
+    .news-card a {
+      color: var(--accent-color);
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">GES DMS</div>
+      <button id="nav-toggle"><i class="fas fa-bars"></i></button>
+      <ul id="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="academics.html">Academics</a></li>
+        <li><a href="admissions.html">Admissions</a></li>
+        <li><a href="campus-life.html">Campus Life</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="news.html" class="active">News</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Page Banner -->
+  <section class="page-banner" style="background-image: url('images/ban_notice.avif');">
+    <div class="banner-content">
+      <h1>Latest News</h1>
+      <p>Stay updated with our recent events and announcements.</p>
+    </div>
+  </section>
+
+  <!-- News Content -->
+  <div class="container">
+    <section class="mb-2">
+      <h2 class="section-title">News &amp; Events</h2>
+      <div class="news-grid">
+        <!-- News Item 1 -->
+        <div class="news-card">
+          <img src="images/sports_bg.png" alt="Annual Sports Day">
+          <div class="content">
+            <h3>Annual Sports Day 2025</h3>
+            <p>Our much‑anticipated annual sports day was held in March 2025. Students showcased their athletic talents in cricket, football, races and gymnastics. Parents and community members cheered enthusiastically as houses competed for the coveted trophy.</p>
+            <p>The day concluded with a colourful award ceremony and motivational speeches celebrating sportsmanship and teamwork. It was a memorable event that reinforced the importance of physical activity alongside academics.</p>
+            <a href="#">Read More</a>
+          </div>
+        </div>
+        <!-- News Item 2 -->
+        <div class="news-card">
+          <img src="images/computer_bg.png" alt="Computer Lab Launch">
+          <div class="content">
+            <h3>State‑of‑the‑Art Computer Lab Launched</h3>
+            <p>In January 2025 we proudly unveiled our newly upgraded computer lab. Equipped with high‑performance computers, interactive displays and high‑speed internet, the lab provides students with hands‑on experience in coding, graphic design and research.</p>
+            <p>The inauguration ceremony included live demonstrations of robotics projects and multimedia presentations created by our students. This facility marks a significant step forward in our commitment to integrating technology into education.</p>
+            <a href="#">Read More</a>
+          </div>
+        </div>
+        <!-- News Item 3 -->
+        <div class="news-card">
+          <img src="images/library_bg.png" alt="AI Library Inauguration">
+          <div class="content">
+            <h3>AI‑Enabled Library Inaugurated</h3>
+            <p>April 2025 saw the grand opening of our AI‑enabled library. The modern space features an intuitive catalogue that suggests books based on students’ reading histories, comfortable seating and quiet study areas. Students can browse digital and physical collections seamlessly.</p>
+            <p>During the launch, the headmaster emphasised the role of libraries in cultivating curiosity and lifelong learning. Parents, teachers and students toured the facility, excited to explore a world of knowledge at their fingertips.</p>
+            <a href="#">Read More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div>
+      <h4>About GES DMS</h4>
+      <p>Founded in 1939, GES Dera Malla Sing has evolved into a modern, English‑medium school offering quality education from Prep to Class VIII.</p>
+    </div>
+    <div>
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="academics.html">Academics</a></li>
+        <li><a href="admissions.html">Admissions</a></li>
+        <li><a href="campus-life.html">Campus Life</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <p>Dera Malla Singh, Sheikhupura, Punjab</p>
+      <p>Phone: +92 42 1234567</p>
+      <p>WhatsApp: +92 300 1234567</p>
+      <p>Email: info@gesdms.edu.pk</p>
+      <div class="social-icons">
+        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
